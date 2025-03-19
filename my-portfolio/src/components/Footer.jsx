@@ -9,7 +9,7 @@ const Footer = ({ darkMode }) => {
     {
       id: "github",
       icon: <FaGithub />,
-      url: "https://github.com/your-username",
+      url: import.meta.env.VITE_GITHUB_URL,
       label: "GitHub",
       hoverColor: "bg-gray-800",
       textColor: "text-white",
@@ -17,7 +17,7 @@ const Footer = ({ darkMode }) => {
     {
       id: "linkedin",
       icon: <FaLinkedin />,
-      url: "https://linkedin.com/in/your-username",
+      url: import.meta.env.VITE_LINKEDIN_URL,
       label: "LinkedIn",
       hoverColor: "bg-blue-600",
       textColor: "text-white",
@@ -25,7 +25,7 @@ const Footer = ({ darkMode }) => {
     {
       id: "twitter",
       icon: <FaXTwitter />,
-      url: "https://twitter.com/your-username",
+      url: import.meta.env.VITE_TWITTER_URL,
       label: "Twitter",
       hoverColor: "bg-sky-500",
       textColor: "text-white",
@@ -33,7 +33,7 @@ const Footer = ({ darkMode }) => {
     {
       id: "instagram",
       icon: <FaInstagram />,
-      url: "https://www.instagram.com/__olivier__20/",
+      url: import.meta.env.VITE_INSTAGRAM_URL,
       label: "Instagram",
       hoverColor: "bg-pink-600",
       textColor: "text-white",
@@ -41,7 +41,7 @@ const Footer = ({ darkMode }) => {
     {
       id: "email",
       icon: <FaEnvelope />,
-      url: "mailto:contact@example.com",
+      url: "mailto:entue@gmail.com",
       label: "Email",
       hoverColor: "bg-gray-600",
       textColor: "text-white",
