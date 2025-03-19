@@ -66,7 +66,7 @@ const Home = ({ darkMode }) => {
           >
             <a
               href={resumeLink}
-              className="flex items-center bg-blue-600 text-white px-5 sm:px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 hover:scale-105"
+              className="flex items-center bg-blue-600 text-white px-5 sm:px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 hover:cursor-pointer transition duration-300 hover:scale-105"
             >
               <FaRegFileAlt className="mr-2" /> Resume
             </a>

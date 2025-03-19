@@ -12,7 +12,10 @@
 // const Navbar = ({ darkMode, setDarkMode }) => {
 //   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 //   const [scrolled, setScrolled] = useState(false);
+//   const [activeSection, setActiveSection] = useState("home");
 //   const navbarRef = useRef(null);
+
+//   const sections = ["home", "about", "skills", "projects", "contact"];
 
 //   const toggleDarkMode = () => {
 //     setDarkMode(!darkMode);
@@ -48,6 +51,26 @@
 //       } else {
 //         setScrolled(false);
 //       }
+
+//       // Determine active section based on scroll position
+//       const currentPosition = window.scrollY + 100; // Add offset for better detection
+
+//       // Find which section is currently in view
+//       for (let i = sections.length - 1; i >= 0; i--) {
+//         const section = document.getElementById(sections[i]);
+//         if (section) {
+//           const sectionTop = section.offsetTop;
+//           const sectionHeight = section.offsetHeight;
+
+//           if (
+//             currentPosition >= sectionTop &&
+//             currentPosition <= sectionTop + sectionHeight
+//           ) {
+//             setActiveSection(sections[i]);
+//             break;
+//           }
+//         }
+//       }
 //     };
 
 //     window.addEventListener("scroll", handleScroll);
@@ -82,14 +105,18 @@
 //               : "bg-gray-100 text-black border-gray-400"
 //           }`}
 //         >
-//           {["home", "about", "skills", "projects", "contact"].map((item) => (
+//           {sections.map((item) => (
 //             <li key={item}>
 //               <Link
 //                 to={item}
 //                 smooth={true}
 //                 duration={500}
 //                 className={`cursor-pointer px-5 py-2 rounded-lg transition ${
-//                   darkMode
+//                   activeSection === item
+//                     ? darkMode
+//                       ? "bg-blue-600 text-white font-medium"
+//                       : "bg-blue-500 text-white font-medium"
+//                     : darkMode
 //                     ? "hover:bg-gray-700 hover:text-white"
 //                     : "hover:bg-blue-500 hover:text-white"
 //                 }`}
@@ -166,32 +193,33 @@
 //           } border-2 mx-3 rounded-lg shadow-lg z-40`}
 //         >
 //           <ul className="py-2">
-//             {["home", "about", "skills", "projects", "contact"].map((item) => (
+//             {sections.map((item) => (
 //               <li key={item} className="py-1">
 //                 <Link
 //                   to={item}
 //                   smooth={true}
 //                   duration={500}
 //                   className={`block px-4 py-2 transition ${
-//                     darkMode ? "hover:bg-gray-700" : "hover:bg-gray-200"
+//                     activeSection === item
+//                       ? darkMode
+//                         ? "bg-gray-700 font-medium"
+//                         : "bg-gray-200 font-medium"
+//                       : darkMode
+//                       ? "hover:bg-gray-700"
+//                       : "hover:bg-gray-200"
 //                   } cursor-pointer`}
 //                   onClick={() => setMobileMenuOpen(false)}
 //                 >
 //                   {item.charAt(0).toUpperCase() + item.slice(1)}
+//                   {activeSection === item && (
+//                     <span className="ml-2 inline-block h-2 w-2 rounded-full bg-blue-500"></span>
+//                   )}
 //                 </Link>
 //               </li>
 //             ))}
 //           </ul>
 //         </div>
 //       )}
-
-//       {/* Optional overlay for better UX on mobile */}
-//       {/* {mobileMenuOpen && (
-//         <div
-//           className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden"
-//           onClick={() => setMobileMenuOpen(false)}
-//         ></div>
-//       )} */}
 //     </div>
 //   );
 // };
@@ -216,6 +244,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const navbarRef = useRef(null);
 
   const sections = ["home", "about", "skills", "projects", "contact"];
+
+  // WhatsApp phone number and message
+  // const phoneNumber = "+250788402197"; // Replace with your actual WhatsApp number
+  // const message = "Hello! I'm reaching out from your website."; // Default message
+
+  const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const message = import.meta.env.VITE_WHATSAPP_MESSAGE;
+
+  // const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  const handleWhatsAppClick = () => {
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -342,7 +385,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             {darkMode ? <WiDaySunny className="text-2xl" /> : <FaRegMoon />}
           </span>
           <div className="border-l h-5"></div>
-          <FaRegCommentDots className="text-3xl cursor-pointer transition hover:bg-blue-500 hover:text-white p-1 rounded-lg" />
+          <FaRegCommentDots
+            className="text-3xl cursor-pointer transition hover:bg-blue-500 hover:text-white p-1 rounded-lg"
+            onClick={handleWhatsAppClick}
+          />
         </div>
 
         {/* Mobile Controls */}
@@ -366,7 +412,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               )}
             </span>
             <div className="border-l h-4 mx-2"></div>
-            <FaRegCommentDots className="text-2xl cursor-pointer transition hover:bg-blue-500 hover:text-white p-1 rounded-lg" />
+            <FaRegCommentDots
+              className="text-2xl cursor-pointer transition hover:bg-blue-500 hover:text-white p-1 rounded-lg"
+              onClick={handleWhatsAppClick}
+            />
           </div>
 
           {/* Mobile Menu Toggle Button */}

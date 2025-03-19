@@ -15,7 +15,7 @@ const projects = [
       "Express JS",
     ],
     demoLink: "#",
-    codeLink: "https://github.com/Entue250",
+    codeLink: import.meta.env.VITE_ECOMMERCE_CODE_LINK,
   },
   {
     title: "Issue Tracker App",
@@ -24,7 +24,7 @@ const projects = [
     image: "/assets/issueTracker.jpg",
     technologies: ["Next.js", "Tailwind CSS", "Radix UI", "Prisma"],
     demoLink: "#",
-    codeLink: "https://github.com/Entue250",
+    codeLink: import.meta.env.VITE_ISSUETRACKER_CODE_LINK,
   },
   {
     title: "Video Chat App",
@@ -33,7 +33,7 @@ const projects = [
     image: "/assets/videoChat.jpeg",
     technologies: ["React JS", "Peer JS", "Material UI"],
     demoLink: "#",
-    codeLink: "https://github.com/Entue250",
+    codeLink: import.meta.env.VITE_VIDEOCHAT_CODE_LINK,
   },
   {
     title: "Movie Hub Platform",
@@ -42,7 +42,7 @@ const projects = [
     image: "/assets/movie.jpg",
     technologies: ["React Native", "TypeScript", "Tailwind CSS", "Appwrite"],
     demoLink: "#",
-    codeLink: "https://github.com/Entue250",
+    codeLink: import.meta.env.VITE_MOVIEHUB_CODE_LINK,
   },
   {
     title: "Multi-Cart Restaurant App",
@@ -51,7 +51,7 @@ const projects = [
     image: "/assets/restaurant.jpeg",
     technologies: ["React Native", "TypeScript", "MongoDB", "Redux"],
     demoLink: "#",
-    codeLink: "https://github.com/Entue250",
+    codeLink: import.meta.env.VITE_MULTICARTREST_CODE_LINK,
   },
   {
     title: "Polling System",
@@ -60,7 +60,7 @@ const projects = [
     image: "/assets/polling.png",
     technologies: ["React JS", "MongoDB", "Tailwind CSS", "Express.js"],
     demoLink: "#",
-    codeLink: "https://github.com/Entue250",
+    codeLink: import.meta.env.VITE_POLLINGSYSTEM_CODE_LINK,
   },
 ];
 
