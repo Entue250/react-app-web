@@ -5,26 +5,26 @@ const Skills = ({ darkMode }) => {
 
   const skills = {
     Frontend: [
-      { name: "HTML", image: "/src/assets/HTML.jpeg" },
-      { name: "CSS", image: "/src/assets/CSS.jpeg" },
-      { name: "JavaScript", image: "/src/assets/JavaScript.jpeg" },
-      { name: "React.js", image: "/src/assets/Reactjs.png" },
+      { name: "HTML", image: "/assets/HTML.jpeg" },
+      { name: "CSS", image: "/assets/CSS.jpeg" },
+      { name: "JavaScript", image: "/assets/JavaScript.jpeg" },
+      { name: "React.js", image: "/assets/Reactjs.png" },
     ],
     Backend: [
-      { name: "Node.js", image: "/src/assets/node.jpg" },
-      { name: "Express.js", image: "/src/assets/Express.jpeg" },
-      { name: "MongoDB", image: "/src/assets/MongoDB.png" },
-      { name: "Firebase", image: "/src/assets/FireBase.png" },
-      { name: "Java", image: "/src/assets/Java.jpeg" },
-      { name: "Python", image: "/src/assets/Python.jpeg" },
-      { name: "MySQL", image: "/src/assets/mysql.jpeg" },
+      { name: "Node.js", image: "/assets/node.jpg" },
+      { name: "Express.js", image: "/assets/Express.jpeg" },
+      { name: "MongoDB", image: "/assets/MongoDB.png" },
+      { name: "Firebase", image: "/assets/FireBase.png" },
+      { name: "Java", image: "/assets/Java.jpeg" },
+      { name: "Python", image: "/assets/Python.jpeg" },
+      { name: "MySQL", image: "/assets/mysql.jpeg" },
     ],
     Technology: [
-      { name: "Git", image: "/src/assets/Git.png" },
-      { name: "GitHub", image: "/src/assets/Github.jpg" },
-      { name: "Docker", image: "/src/assets/docker.jpeg" },
-      { name: "AWS", image: "/src/assets/AWS.png" },
-      { name: "Linux", image: "/src/assets/Linux.jpeg" },
+      { name: "Git", image: "/assets/Git.png" },
+      { name: "GitHub", image: "/assets/Github.jpg" },
+      { name: "Docker", image: "/assets/docker.jpeg" },
+      { name: "AWS", image: "/assets/AWS.png" },
+      { name: "Linux", image: "/assets/Linux.jpeg" },
     ],
   };
 

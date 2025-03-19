@@ -6,7 +6,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "Full-stack e-commerce platform built with React, Node.js, and MongoDB.",
-    image: "/src/assets/ecommerce.png",
+    image: "/assets/ecommerce.png",
     technologies: [
       "React JS",
       "TypeScript",
@@ -21,7 +21,7 @@ const projects = [
     title: "Issue Tracker App",
     description:
       "An issue tracking application for tracking, managing, and resolving issues efficiently with real-time collaboration, notifications, and workflow automation.",
-    image: "/src/assets/issueTracker.jpg",
+    image: "/assets/issueTracker.jpg",
     technologies: ["Next.js", "Tailwind CSS", "Radix UI", "Prisma"],
     demoLink: "#",
     codeLink: "https://github.com/Entue250",
@@ -30,7 +30,7 @@ const projects = [
     title: "Video Chat App",
     description:
       "Connect instantly with seamless video calls, messaging, and secure communication anytime, anywhere.",
-    image: "/src/assets/videoChat.jpeg",
+    image: "/assets/videoChat.jpeg",
     technologies: ["React JS", "Peer JS", "Material UI"],
     demoLink: "#",
     codeLink: "https://github.com/Entue250",
@@ -39,7 +39,7 @@ const projects = [
     title: "Movie Hub Platform",
     description:
       "Stream, discover, and review movies with personalized recommendations, high-quality playback, and an engaging user experience.",
-    image: "/src/assets/movie.jpg",
+    image: "/assets/movie.jpg",
     technologies: ["React Native", "TypeScript", "Tailwind CSS", "Appwrite"],
     demoLink: "#",
     codeLink: "https://github.com/Entue250",
@@ -48,7 +48,7 @@ const projects = [
     title: "Multi-Cart Restaurant App",
     description:
       "Restaurant app which helps to order from multiple restaurants in one app with seamless browsing, secure payments, and real-time tracking.",
-    image: "/src/assets/restaurant.jpeg",
+    image: "/assets/restaurant.jpeg",
     technologies: ["React Native", "TypeScript", "MongoDB", "Redux"],
     demoLink: "#",
     codeLink: "https://github.com/Entue250",
@@ -57,7 +57,7 @@ const projects = [
     title: "Polling System",
     description:
       "A digital election platform for conducting surveys effortlessly with customizable polls, secure voting, real-time results, and detailed analytics.",
-    image: "/src/assets/polling.png",
+    image: "/assets/polling.png",
     technologies: ["React JS", "MongoDB", "Tailwind CSS", "Express.js"],
     demoLink: "#",
     codeLink: "https://github.com/Entue250",
