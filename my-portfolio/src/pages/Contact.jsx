@@ -846,9 +846,7 @@ const Contact = ({ darkMode, setDarkMode }) => {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   // Google Sheets Web App URL - replace with your actual deployed script URL
-  const GOOGLE_SHEETS_WEB_APP_URL =
-    "https://script.google.com/macros/s/AKfycbyrYc6VGCl9Y3hlSBhXEBvYq0iUgBzRMzfbPWHOj0W4y5RywlZic3QtAsJd1xfFpry4oQ/exec";
-
+  const GOOGLE_SHEETS_WEB_APP_URL = import.meta.env.VITE_GOOGLE_WEB_APP_URL;
   useEffect(() => {
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 100);

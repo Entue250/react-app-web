@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaRegFileAlt, FaPaperPlane } from "react-icons/fa";
 import profileImage from "/src/assets/Me.jpg";
 
+const resumeLink = import.meta.env.VITE_RESUME_URL;
+
 const Home = ({ darkMode }) => {
   return (
     <section
@@ -63,7 +65,7 @@ const Home = ({ darkMode }) => {
             transition={{ duration: 1.2 }}
           >
             <a
-              href="https://your-google-drive-resume-link"
+              href={resumeLink}
               className="flex items-center bg-blue-600 text-white px-5 sm:px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 hover:scale-105"
             >
               <FaRegFileAlt className="mr-2" /> Resume
