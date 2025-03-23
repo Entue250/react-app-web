@@ -337,7 +337,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className="flex items-center border-2 border-blue-500 px-2 py-2 rounded-xl cursor-pointer hover:bg-blue-500 hover:text-white transition"
         >
           <FaDesktop className="text-xl mr-2" />
-          <span className="font-bold text-lg">EntueCode...</span>
+          <span className="font-bold text-lg">EntueCode👑</span>
         </Link>
 
         {/* Desktop Navigation Links - Hidden on mobile */}
