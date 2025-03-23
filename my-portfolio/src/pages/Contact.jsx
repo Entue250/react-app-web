@@ -1098,7 +1098,10 @@ const Contact = ({ darkMode, setDarkMode }) => {
   };
 
   const handleLocationClick = () => {
-    window.open("https://maps.google.com/?q=Kigali,Rwanda", "_blank");
+    window.open(
+      "https://www.google.com/maps/@-1.9347045,30.1333798,3a,75y,275.19h,90t/data=!3m7!1e1!3m5!1s4WbAi_BPA4WsbY1W276ABg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D4WbAi_BPA4WsbY1W276ABg%26yaw%3D275.19!7i16384!8i8192!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",
+      "_blank"
+    );
   };
 
   return (
@@ -1213,7 +1216,7 @@ const Contact = ({ darkMode, setDarkMode }) => {
 
                 {/* Location - Clickable */}
                 <a
-                  href="https://www.google.com/maps/@-1.9347045,30.1333798,3a,75y,285.66h,100.97t/data=!3m7!1e1!3m5!1s4WbAi_BPA4WsbY1W276ABg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-10.965614133560152%26panoid%3D4WbAi_BPA4WsbY1W276ABg%26yaw%3D285.6575729066496!7i16384!8i8192!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/@-1.9347045,30.1333798,3a,75y,275.19h,90t/data=!3m7!1e1!3m5!1s4WbAi_BPA4WsbY1W276ABg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D4WbAi_BPA4WsbY1W276ABg%26yaw%3D275.19!7i16384!8i8192!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => {
