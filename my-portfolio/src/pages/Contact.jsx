@@ -12,7 +12,7 @@ import emailjs from "@emailjs/browser";
 // Spinner Component
 const Spinner = () => (
   <div
-    className="inline-block h-5 w-5 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+    className="inline-block h-5 w-5 animate-spin rounded-full border-2 border-dashed border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
     role="status"
   >
     <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
@@ -181,7 +181,7 @@ const Contact = ({ darkMode, setDarkMode }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Info Card */}
             <div
-              className={`h-100 ${
+              className={`h-full ${
                 darkMode ? "bg-gray-800" : "bg-white"
               } p-5 rounded-lg shadow-lg transition-all duration-300`}
             >
