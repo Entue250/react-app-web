@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaRegFileAlt, FaPaperPlane } from "react-icons/fa";
-import profileImage from "/src/assets/Me.jpg";
+import profileImage from "/src/assets/Mr Edouardo.png";
 
 const resumeLink = import.meta.env.VITE_RESUME_URL;
 
