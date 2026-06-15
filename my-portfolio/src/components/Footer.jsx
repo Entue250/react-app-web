@@ -149,12 +149,12 @@ const Footer = ({ darkMode }) => {
           {/* Copyright Text & Tagline - Responsive */}
           <div className="text-center w-full px-4 sm:px-6 max-w-md mx-auto">
             <p
-  className={`text-sm sm:text-md mb-2 ${
-    darkMode ? "text-gray-300" : "text-gray-600"
-  }`}
->
-  © {new Date().getFullYear()} Eduard NIYOMUGABO. All rights reserved.
-</p>
+              className={`text-sm sm:text-md mb-2 ${
+                darkMode ? "text-gray-300" : "text-gray-600"
+              }`}
+            >
+              © {new Date().getFullYear()} Eduard NIYOMUGABO. All rights reserved.
+            </p>
 
             <p
               className={`text-xs sm:text-sm ${
