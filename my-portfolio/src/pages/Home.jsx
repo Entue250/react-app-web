@@ -40,8 +40,7 @@ const Home = ({ darkMode }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
           >
-            {/* Full Stack Developer */}
-            223005447
+            Full Stack Developer
           </motion.h3>
 
           <motion.p
